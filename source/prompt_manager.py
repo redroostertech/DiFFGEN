@@ -19,5 +19,5 @@ def prompt_for_chunk_analysis(context, chunk):
 def prompt_for_summary(context):
     return (f"Based on the detailed analyses of code changes, please consolidate the key findings into a summarized commit message. The summary should be presented in a bulleted list, "
             "capturing the essence of the changes in a clear and concise manner. Focus on highlighting the most significant aspects of the changes, including their purpose and impact. "
-            "Analyses:\n\n{context}"
+            f"Analyses:\n\n{context}"
             "Generate a summarized commit message in bullet points:")

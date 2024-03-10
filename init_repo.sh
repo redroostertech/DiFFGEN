@@ -16,6 +16,8 @@ fi
 
 # Install requirements using pip
 if [ -f "requirements.txt" ]; then
+    echo "Uninstalling Python dependencies for a fresh install..."
+    pip3 uninstall openai pyperclip python-dotenv python-docx
     echo "Installing Python dependencies from requirements.txt..."
     pip3 install -r requirements.txt
     echo "Dependencies installed successfully."

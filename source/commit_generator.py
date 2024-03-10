@@ -5,25 +5,6 @@ import prompt_manager
 import pyperclip
 import utiliities
 
-def generate_commit_message_v1(diff, context):
-    """
-    Generate a commit message using OpenAI's API based on the diff and a given context.
-    """
-    if not diff:
-        return "No changes staged for commit"
-    
-    # Filter the diff to include only additions and removals
-    filtered_diff = diff_manager.filter_diff_additions_removals(diff)
-    
-    # Truncate the diff and context if they're too long
-    max_diff_length = 4000 - len(context)  # Reserve space for context
-    truncated_diff = (filtered_diff[:max_diff_length] + '...') if len(filtered_diff) > max_diff_length else filtered_diff
-
-    # Combine the context with the diff data
-    prompt_text = f"{context}\n\nCode Changes:\n{truncated_diff}\n\nCommit message:"
-
-    return openai_service.generate_openai_reponse(prompt_text)
-
 def analyze_diff(diff, context):
     """
     Generate a commit message using OpenAI's API based on the diff and a given context.
