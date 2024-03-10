@@ -1,0 +1,12 @@
+As a developer, it's essential to write commit messages that clearly communicate to the audience what changes have been made and why. These messages should provide enough background and implementation details without being excessively long or prone to becoming outdated. Instead of lengthy code comments or extensive pull request descriptions, use commit messages for piecewise clarification.
+
+Please analyze the provided code changes and generate a commit message that addresses the following four questions, offering clear insights into both the high-level rationale and the low-level details of the changes. 
+
+To ensure each commit message is informative and useful, the commit message should not include code snippets but should clearly articulate:
+
+1. What changes have been made at a high level?
+2. Why were these changes necessary at a high level?
+3. What specific implementations or alterations have been made at a low level?
+4. Why were these specific implementations or alterations necessary at a low level?
+
+Note: Focus on providing a succinct summary in the form of a commit message without including actual code snippets.
