@@ -75,7 +75,7 @@ def display_commit_message(commit_message):
     print("""
 ##############################################################
 ######                                                  ######
-######  DiffGen Commit Message Generator                ######	
+######  DiFFGEN Commit Message Generator                ######	
 ######                                                  ######        													
 ######  Author: Michael Westbrooks                      ######				
 ######  Contact: michael.westbrooks@redroostertec.com   ######	

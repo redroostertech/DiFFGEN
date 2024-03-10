@@ -1,12 +1,12 @@
-# DiffGen
+# DiFFGEN
 
 ### Overview
 
-DifGen is an innovative tool designed to streamline the development workflow by automatically generating meaningful commit messages and pull request descriptions from git diffs. Leveraging the power of advanced AI, DifGen analyzes the changes in your code to create concise, informative summaries that capture the essence of each update, helping teams to understand code modifications quickly and improving the documentation process.
+DiFFGEN is an innovative tool I developed to deepen my understanding of both Python programming and working with OpenAI. It aims to streamline the development workflow by automatically generating meaningful commit messages and pull request descriptions from git diffs. Leveraging the power of AI, DiFFGEN analyzes the changes in your code to create concise, informative summaries that capture the essence of each update. This project began as a personal endeavor driven by a desire to enhance my skills and knowledge in Python and AI technologies, while also addressing a practical need in the software development process. Through working on DiFFGEN, I've gained valuable insights into both the technical aspects of coding and the applications of artificial intelligence in real-world scenarios. 
 
 ### Why DiffGen?
 
-DifGen offers significant value to developers and teams by:
+DiFFGEN offers significant value to developers and teams by:
 
 - **Saving Time**: Automates the generation of commit messages and PR descriptions, freeing up developers to focus on coding.
 - **Improving Clarity**: Generates clear and concise summaries of changes, making it easier for team members to understand the context and impact of modifications.
@@ -26,8 +26,8 @@ DifGen offers significant value to developers and teams by:
 1. Clone the Repository
 
 ```
-git clone https://github.com/yourusername/DifGen.git
-cd DifGen
+git clone https://github.com/yourusername/DiFFGEN.git
+cd DiFFGEN
 ```
 2. Set up a Virtual Environment (Optional)
 
@@ -42,34 +42,53 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+or 
+
+```
+./init_repo.sh
+```
+
 4. Configuration
 
 - Create a `.env` file in the root directory.
-- Add your OpenAI API key: `OPENAI_API_KEY=your_api_key_here`
+- Add the following values:
+
+```
+PROMPT_PATH=source/prompt_v2.txt <- Provided prompt or create your own!
+OPENAI_ENGINE=text-davinci-003
+OPENAI_API_KEY=123456789
+ENV=LOCAL <- More so for logging
+```
 
 ### Usage
 
 1. Navigate to Your Git Repository
-    - Ensure you're in the root directory of the Git repository you want to analyze.
+    - Ensure DiFFGEN is located in the root directory of the Git repository you want to analyze.
 
-2. Run DifGen
+2. Run DiFFGEN
 
 ```
-python difgen.py
+python3 source/commit_generator.py
+```
+
+or
+
+```
+./commit.sh
 ```
 
 Follow any on-screen instructions to select the diffs or commits you wish to analyze.
 
 ### Contributing
 
-We welcome contributions to DifGen! If you have suggestions for improvements or bug fixes, please open an issue or pull request.
+We welcome contributions to DiFFGEN! If you have suggestions for improvements or bug fixes, please open an issue or pull request.
 
 ### License
 
-DifGen is released under the MIT License. See the LICENSE file for more information.
+DiFFGEN is released under the MIT License. See the LICENSE file for more information.
 
 ### Acknowledgments
 
 This project utilizes OpenAI's API for generating content based on code diffs.
 
-Thanks to all contributors and users of DifGen for your support and feedback.
+Thanks to all contributors and users of DiFFGEN for your support and feedback.
