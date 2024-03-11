@@ -1,3 +1,4 @@
+![](logo.jpg)
 # DiFFGEN
 
 ### Overview
