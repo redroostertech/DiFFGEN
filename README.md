@@ -1,4 +1,6 @@
-![logo](logo.jpg)
+<img src="https://github.com/redroostertech/DiFFGEN/assets/8765750/93a1a122-e772-480d-b5cd-3edd51ac285e"
+     alt="logo"
+     height="225" />
 # DiFFGEN
 
 ### Overview
